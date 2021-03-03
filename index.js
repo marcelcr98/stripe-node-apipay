@@ -2,6 +2,8 @@ const express = require ('express')
 const stripe = require ('stripe')
 ('sk_test_51IPdRlGVQdBXbXkJjqTVNffab2ve4Vpr9bF7CExsAVsQMW4ut1FjfjqXFbIgiPZHDFsItquYt7CF8aO9IMqAnZTH00pUtaXg3K'); //secret_key_stripe
 
+//Llave pública para la vista:  pk_test_51IPdRlGVQdBXbXkJkKE7KAH3OxbaDYpuTOujh3w50dc9T4m98Qw0IUUwcoG34RyNGllLGc6aLV1yDC7WuUm2GEdP00A73T1zQa
+
 const cors=require('cors');
 
 const app = express();
