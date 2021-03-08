@@ -44,6 +44,8 @@ app.post('/stripe_checkout', async (req,res)=>{
     };
     
 });
-app.listen(3000,()=>{
-    console.log('Server en PORT 3000')
-})
+// settings
+app.set("port", process.env.PORT || 3000);
+
+app.listen(app.get('port'));
+console.log("Server en puerto",app.get("port"));
