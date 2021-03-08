@@ -13,13 +13,11 @@ app.use(express.json());
 app.post('/stripe_checkout', async (req,res)=>{
     const stripeToken =req.body.stripeToken;
     const cantidad = req.body.cantidad;
-<<<<<<< HEAD
     const correo = req.body.correo;
 
-=======
-    
+
     //cantidad para pagar y cargar el pago
->>>>>>> d2d987d42f798acb6fa87529d957398eda060e78
+
     const cantidadInPen = Math.round(cantidad*100);
     const chargeObject=await stripe.charges.create({
 
